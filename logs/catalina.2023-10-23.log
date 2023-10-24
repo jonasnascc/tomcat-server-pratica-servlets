@@ -1,0 +1,430 @@
+23-Oct-2023 20:00:04.411 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre-1.8
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_391-b13
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:00:04.415 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:00:04.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\conf\logging.properties
+23-Oct-2023 20:00:04.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Oct-2023 20:00:04.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Oct-2023 20:00:04.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Oct-2023 20:00:04.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Oct-2023 20:00:04.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:00:04.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:00:04.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\temp
+23-Oct-2023 20:00:04.481 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Jonas\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Jonas\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts;C:\Python312;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Jonas\AppData\Local\Microsoft\WindowsApps;C:\Users\Jonas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jonas\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+23-Oct-2023 20:00:04.937 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:00:04.952 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1039)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1326)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1339)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:654)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:75)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1009)
+		... 13 more
+23-Oct-2023 20:00:04.953 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [850] milliseconds
+23-Oct-2023 20:00:05.002 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Oct-2023 20:00:05.002 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
+23-Oct-2023 20:00:05.037 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war]
+23-Oct-2023 20:00:06.080 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war] has finished in [1.041] ms
+23-Oct-2023 20:00:06.082 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs]
+23-Oct-2023 20:00:06.161 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs] has finished in [80] ms
+23-Oct-2023 20:00:06.162 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples]
+23-Oct-2023 20:00:07.214 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples] has finished in [1.052] ms
+23-Oct-2023 20:00:07.215 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager]
+23-Oct-2023 20:00:07.298 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager] has finished in [84] ms
+23-Oct-2023 20:00:07.299 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager]
+23-Oct-2023 20:00:07.376 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager] has finished in [77] ms
+23-Oct-2023 20:00:07.377 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT]
+23-Oct-2023 20:00:07.438 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT] has finished in [61] ms
+23-Oct-2023 20:00:07.444 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [2491] milliseconds
+23-Oct-2023 20:00:07.453 GRAVE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+		at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+		at java.net.PlainSocketImpl.bind(Unknown Source)
+		at java.net.ServerSocket.bind(Unknown Source)
+		at java.net.ServerSocket.<init>(Unknown Source)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:581)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+23-Oct-2023 20:00:07.454 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:00:07.454 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-Oct-2023 20:00:07.477 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:00:07.479 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:00:56.076 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
+23-Oct-2023 20:00:56.148 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
+23-Oct-2023 20:00:56.150 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
+23-Oct-2023 20:00:56.150 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+23-Oct-2023 20:00:56.151 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+23-Oct-2023 20:00:56.151 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-Oct-2023 20:00:56.151 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre-1.8
+23-Oct-2023 20:00:56.152 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_391-b13
+23-Oct-2023 20:00:56.152 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Oct-2023 20:00:56.152 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:00:56.153 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:00:56.156 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\conf\logging.properties
+23-Oct-2023 20:00:56.157 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Oct-2023 20:00:56.157 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Oct-2023 20:00:56.158 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Oct-2023 20:00:56.159 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Oct-2023 20:00:56.159 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:00:56.160 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:00:56.161 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\temp
+23-Oct-2023 20:00:56.234 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Jonas\AppData\Local\Microsoft\WindowsApps;;C:\Users\Jonas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jonas\AppData\Roaming\npm;.]
+23-Oct-2023 20:00:56.675 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:00:56.700 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [926] milliseconds
+23-Oct-2023 20:00:56.749 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Oct-2023 20:00:56.750 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
+23-Oct-2023 20:00:56.784 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war]
+23-Oct-2023 20:00:57.718 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war] has finished in [933] ms
+23-Oct-2023 20:00:57.720 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs]
+23-Oct-2023 20:00:57.795 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs] has finished in [75] ms
+23-Oct-2023 20:00:57.795 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples]
+23-Oct-2023 20:00:58.798 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples] has finished in [1.003] ms
+23-Oct-2023 20:00:58.799 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager]
+23-Oct-2023 20:00:58.888 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager] has finished in [89] ms
+23-Oct-2023 20:00:58.889 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager]
+23-Oct-2023 20:00:58.993 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager] has finished in [104] ms
+23-Oct-2023 20:00:58.994 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT]
+23-Oct-2023 20:00:59.061 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT] has finished in [68] ms
+23-Oct-2023 20:00:59.066 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:00:59.127 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [2426] milliseconds
+23-Oct-2023 20:04:15.652 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:04:15.711 INFORMAÇÕES [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-Oct-2023 20:04:15.745 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:04:15.751 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:08:29.436 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
+23-Oct-2023 20:08:29.441 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
+23-Oct-2023 20:08:29.442 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
+23-Oct-2023 20:08:29.443 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+23-Oct-2023 20:08:29.444 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+23-Oct-2023 20:08:29.445 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-Oct-2023 20:08:29.445 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre-1.8
+23-Oct-2023 20:08:29.446 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_391-b13
+23-Oct-2023 20:08:29.446 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Oct-2023 20:08:29.447 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:08:29.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:08:29.449 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\conf\logging.properties
+23-Oct-2023 20:08:29.449 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Oct-2023 20:08:29.450 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Oct-2023 20:08:29.450 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Oct-2023 20:08:29.451 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Oct-2023 20:08:29.451 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:08:29.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:08:29.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\temp
+23-Oct-2023 20:08:29.498 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Jonas\AppData\Local\Microsoft\WindowsApps;;C:\Users\Jonas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jonas\AppData\Roaming\npm;.]
+23-Oct-2023 20:08:29.965 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:08:29.979 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1039)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1326)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1339)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:654)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:75)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1009)
+		... 13 more
+23-Oct-2023 20:08:29.981 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [832] milliseconds
+23-Oct-2023 20:08:30.032 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Oct-2023 20:08:30.033 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
+23-Oct-2023 20:08:30.068 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war]
+23-Oct-2023 20:08:30.109 INFORMAÇÕES [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj] was found with a last modified time that did not match the associated WAR. It will be deleted.
+23-Oct-2023 20:08:31.190 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war] has finished in [1.116] ms
+23-Oct-2023 20:08:31.192 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs]
+23-Oct-2023 20:08:31.270 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs] has finished in [78] ms
+23-Oct-2023 20:08:31.271 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples]
+23-Oct-2023 20:08:32.316 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples] has finished in [1.045] ms
+23-Oct-2023 20:08:32.317 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager]
+23-Oct-2023 20:08:32.407 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager] has finished in [89] ms
+23-Oct-2023 20:08:32.408 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager]
+23-Oct-2023 20:08:32.486 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager] has finished in [79] ms
+23-Oct-2023 20:08:32.487 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT]
+23-Oct-2023 20:08:32.558 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT] has finished in [71] ms
+23-Oct-2023 20:08:32.567 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [2585] milliseconds
+23-Oct-2023 20:08:32.574 GRAVE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+		at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+		at java.net.PlainSocketImpl.bind(Unknown Source)
+		at java.net.ServerSocket.bind(Unknown Source)
+		at java.net.ServerSocket.<init>(Unknown Source)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:581)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+23-Oct-2023 20:08:32.575 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:08:32.576 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-Oct-2023 20:08:32.608 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:08:32.610 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:08:49.413 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
+23-Oct-2023 20:08:49.417 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
+23-Oct-2023 20:08:49.419 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
+23-Oct-2023 20:08:49.419 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+23-Oct-2023 20:08:49.420 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+23-Oct-2023 20:08:49.421 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-Oct-2023 20:08:49.422 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre-1.8
+23-Oct-2023 20:08:49.422 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_391-b13
+23-Oct-2023 20:08:49.424 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Oct-2023 20:08:49.424 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:08:49.425 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:08:49.426 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\conf\logging.properties
+23-Oct-2023 20:08:49.426 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Oct-2023 20:08:49.427 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Oct-2023 20:08:49.428 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Oct-2023 20:08:49.429 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Oct-2023 20:08:49.430 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:08:49.431 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:08:49.431 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\temp
+23-Oct-2023 20:08:49.481 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Jonas\AppData\Local\Microsoft\WindowsApps;;C:\Users\Jonas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jonas\AppData\Roaming\npm;.]
+23-Oct-2023 20:08:49.952 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:08:49.976 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [846] milliseconds
+23-Oct-2023 20:08:50.028 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Oct-2023 20:08:50.029 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
+23-Oct-2023 20:08:50.063 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war]
+23-Oct-2023 20:08:50.984 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war] has finished in [916] ms
+23-Oct-2023 20:08:50.986 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs]
+23-Oct-2023 20:08:51.065 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs] has finished in [79] ms
+23-Oct-2023 20:08:51.065 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples]
+23-Oct-2023 20:08:52.114 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples] has finished in [1.048] ms
+23-Oct-2023 20:08:52.114 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager]
+23-Oct-2023 20:08:52.194 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager] has finished in [80] ms
+23-Oct-2023 20:08:52.195 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager]
+23-Oct-2023 20:08:52.274 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager] has finished in [79] ms
+23-Oct-2023 20:08:52.275 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT]
+23-Oct-2023 20:08:52.343 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT] has finished in [68] ms
+23-Oct-2023 20:08:52.348 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:08:52.368 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [2390] milliseconds
+23-Oct-2023 20:12:36.244 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:12:36.297 INFORMAÇÕES [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-Oct-2023 20:12:36.327 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:12:36.358 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:24:42.240 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
+23-Oct-2023 20:24:42.244 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
+23-Oct-2023 20:24:42.244 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
+23-Oct-2023 20:24:42.244 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+23-Oct-2023 20:24:42.244 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+23-Oct-2023 20:24:42.245 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-Oct-2023 20:24:42.245 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre-1.8
+23-Oct-2023 20:24:42.245 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_391-b13
+23-Oct-2023 20:24:42.245 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Oct-2023 20:24:42.245 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:24:42.246 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:24:42.247 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\conf\logging.properties
+23-Oct-2023 20:24:42.248 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Oct-2023 20:24:42.248 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Oct-2023 20:24:42.249 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Oct-2023 20:24:42.249 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Oct-2023 20:24:42.250 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:24:42.250 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:24:42.251 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\temp
+23-Oct-2023 20:24:42.293 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Jonas\AppData\Local\Microsoft\WindowsApps;C:\Users\Jonas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jonas\AppData\Roaming\npm;.]
+23-Oct-2023 20:24:42.711 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:24:42.725 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1039)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1326)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1339)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:654)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:75)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1009)
+		... 13 more
+23-Oct-2023 20:24:42.726 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [736] milliseconds
+23-Oct-2023 20:24:42.773 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Oct-2023 20:24:42.773 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
+23-Oct-2023 20:24:42.805 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war]
+23-Oct-2023 20:24:43.780 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war] has finished in [972] ms
+23-Oct-2023 20:24:43.781 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs]
+23-Oct-2023 20:24:43.864 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs] has finished in [83] ms
+23-Oct-2023 20:24:43.864 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples]
+23-Oct-2023 20:24:44.808 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples] has finished in [944] ms
+23-Oct-2023 20:24:44.808 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager]
+23-Oct-2023 20:24:44.887 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager] has finished in [79] ms
+23-Oct-2023 20:24:44.888 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager]
+23-Oct-2023 20:24:44.964 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager] has finished in [76] ms
+23-Oct-2023 20:24:44.965 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT]
+23-Oct-2023 20:24:45.026 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT] has finished in [61] ms
+23-Oct-2023 20:24:45.031 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [2303] milliseconds
+23-Oct-2023 20:24:45.035 GRAVE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+		at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+		at java.net.PlainSocketImpl.bind(Unknown Source)
+		at java.net.ServerSocket.bind(Unknown Source)
+		at java.net.ServerSocket.<init>(Unknown Source)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:581)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+23-Oct-2023 20:24:45.037 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:24:45.037 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-Oct-2023 20:24:45.060 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:24:45.062 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:24:50.244 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
+23-Oct-2023 20:24:50.248 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
+23-Oct-2023 20:24:50.249 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
+23-Oct-2023 20:24:50.250 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+23-Oct-2023 20:24:50.250 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+23-Oct-2023 20:24:50.251 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-Oct-2023 20:24:50.251 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre-1.8
+23-Oct-2023 20:24:50.252 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_391-b13
+23-Oct-2023 20:24:50.252 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Oct-2023 20:24:50.253 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:24:50.253 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:24:50.254 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\conf\logging.properties
+23-Oct-2023 20:24:50.254 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Oct-2023 20:24:50.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Oct-2023 20:24:50.256 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Oct-2023 20:24:50.256 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Oct-2023 20:24:50.257 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:24:50.258 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:24:50.259 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\temp
+23-Oct-2023 20:24:50.300 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Jonas\AppData\Local\Microsoft\WindowsApps;C:\Users\Jonas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jonas\AppData\Roaming\npm;.]
+23-Oct-2023 20:24:50.713 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:24:50.736 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [748] milliseconds
+23-Oct-2023 20:24:50.782 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Oct-2023 20:24:50.783 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
+23-Oct-2023 20:24:50.813 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war]
+23-Oct-2023 20:24:51.689 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war] has finished in [873] ms
+23-Oct-2023 20:24:51.691 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs]
+23-Oct-2023 20:24:51.765 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs] has finished in [74] ms
+23-Oct-2023 20:24:51.766 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples]
+23-Oct-2023 20:24:52.693 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples] has finished in [926] ms
+23-Oct-2023 20:24:52.693 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager]
+23-Oct-2023 20:24:52.771 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager] has finished in [78] ms
+23-Oct-2023 20:24:52.772 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager]
+23-Oct-2023 20:24:52.844 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager] has finished in [72] ms
+23-Oct-2023 20:24:52.845 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT]
+23-Oct-2023 20:24:52.905 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT] has finished in [59] ms
+23-Oct-2023 20:24:52.909 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:24:52.928 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [2191] milliseconds
+23-Oct-2023 20:28:01.172 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:28:01.226 INFORMAÇÕES [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-Oct-2023 20:28:01.256 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:28:01.261 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:28:56.442 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.82
+23-Oct-2023 20:28:56.446 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 11 2023 13:15:08 UTC
+23-Oct-2023 20:28:56.446 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.82.0
+23-Oct-2023 20:28:56.446 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+23-Oct-2023 20:28:56.447 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+23-Oct-2023 20:28:56.447 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-Oct-2023 20:28:56.447 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre-1.8
+23-Oct-2023 20:28:56.447 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_391-b13
+23-Oct-2023 20:28:56.447 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Oct-2023 20:28:56.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:28:56.448 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:28:56.450 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\conf\logging.properties
+23-Oct-2023 20:28:56.450 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Oct-2023 20:28:56.451 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Oct-2023 20:28:56.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Oct-2023 20:28:56.452 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Oct-2023 20:28:56.453 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:28:56.454 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD
+23-Oct-2023 20:28:56.454 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\temp
+23-Oct-2023 20:28:56.497 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Jonas\Documents\Java\jdk-17.0.9\bin;.]
+23-Oct-2023 20:28:56.914 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:28:56.938 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [758] milliseconds
+23-Oct-2023 20:28:56.985 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Oct-2023 20:28:56.986 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.82]
+23-Oct-2023 20:28:57.019 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war]
+23-Oct-2023 20:28:57.992 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\crud-proj.war] has finished in [969] ms
+23-Oct-2023 20:28:57.993 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs]
+23-Oct-2023 20:28:58.071 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\docs] has finished in [78] ms
+23-Oct-2023 20:28:58.072 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples]
+23-Oct-2023 20:28:59.020 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\examples] has finished in [948] ms
+23-Oct-2023 20:28:59.021 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager]
+23-Oct-2023 20:28:59.103 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\host-manager] has finished in [82] ms
+23-Oct-2023 20:28:59.104 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager]
+23-Oct-2023 20:28:59.181 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\manager] has finished in [77] ms
+23-Oct-2023 20:28:59.181 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT]
+23-Oct-2023 20:28:59.243 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Jonas\Downloads\apache-tomcat-9.0.82 PROD\webapps\ROOT] has finished in [62] ms
+23-Oct-2023 20:28:59.248 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:28:59.268 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [2329] milliseconds
+23-Oct-2023 20:29:50.907 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:29:50.977 INFORMAÇÕES [Thread-2] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+23-Oct-2023 20:29:51.020 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+23-Oct-2023 20:29:51.029 INFORMAÇÕES [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
